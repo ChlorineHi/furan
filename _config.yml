@@ -9,14 +9,14 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "gothic" # Themes: default, air, sunrise, mint, dirt, contrast, gothic
-title                    : "Your Name / Site Title"
+title                    : "王景煊 (Jingxuan Wang)"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "王景煊 (Jingxuan Wang)"
+description              : &description "BUPT · Software Engineering · AI for Science (Drug Discovery / Precision Medicine / Multimodal Healthcare / Single-cell & Omics)"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://chlorinehi.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/furan" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "ChlorineHi/furan"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,12 +24,12 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : #"Your Sidebar Name"
+  name             : "王景煊 (Jingxuan Wang)"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : "https://chlorinehi.github.io"
+  bio              : "北京邮电大学软件工程本科生，关注 AI for Science（药物发现/精准医疗/医疗多模态/单细胞与组学分析）。"
+  location         : "Beijing, China"
+  employer         : "Beijing University of Posts and Telecommunications (BUPT)"
+  uri              : "https://chlorinehi.github.io/furan/"
   email            : "wasd2004121600@bupt.edu.cn" 
 
   # Academic website
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "ChlorineHi"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
