@@ -1,0 +1,81 @@
+/* ==========================================================================
+   GOTHIC THEME - DARK VERSION (DEEP NIGHT)
+   ========================================================================== */
+/* Color codes used for the theme */
+$primary-color              : #7c8aa6;
+$background                 : #0b0c12;
+$background-light           : #121521;
+$background-lighter         : #191e2e;
+$text                       : #d7d9e0;
+$text-muted                 : #aeb4c4;
+$link                       : #93b7e1;
+$link-dark                  : #b6ccea;
+$link-light                 : #7aa5cf;
+$footer                     : #090a10;
+$border                     : #232739;
+$border-light               : #2e3447;
+$selection-bg               : #1f2c45;
+$selection-text             : #f0f4ff;
+
+/* Color codes used for the site */
+$danger-color               : #b85e5e;
+$info-color                 : #93b7e1;
+$notice-color               : #9aa6bd;
+$success-color              : #7f9a82;
+$warning-color              : #b69461;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+  --global-toc-bg-color               : #{$background-light};
+  --global-selection-bg-color         : #{$selection-bg};
+  --global-selection-text-color       : #{$selection-text};
+}
+
+/* Dark mode texture */
+html[data-theme="dark"] body {
+  background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.035) 0, rgba(255, 255, 255, 0.035) 1px, transparent 2px),
+    radial-gradient(circle at 72% 40%, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 2px),
+    radial-gradient(circle at 40% 78%, rgba(255, 255, 255, 0.025) 0, rgba(255, 255, 255, 0.025) 1px, transparent 2px),
+    linear-gradient(180deg, rgba(10, 11, 18, 0.96), rgba(6, 7, 12, 0.98));
+  background-size: 280px 280px, 360px 360px, 440px 440px, 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Text selection styling for dark theme */
+html[data-theme="dark"] ::selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}
+
+html[data-theme="dark"] ::-moz-selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}

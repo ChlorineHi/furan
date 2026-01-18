@@ -1,0 +1,97 @@
+/* ==========================================================================
+   GOTHIC THEME - LIGHT VERSION (MOODY DUSK)
+   ========================================================================== */
+/* Color codes used for the theme */
+$primary-color              : #6d7a94;
+$dark-primary-color         : mix(#000, $primary-color, 35%);
+$darker-primary-color       : mix(#000, $primary-color, 55%);
+$light-primary-color        : mix(#fff, $primary-color, 35%);
+$lighter-primary-color      : mix(#fff, $primary-color, 80%);
+$background                 : #141622;
+$background-light           : #1b1e2b;
+$background-lighter         : #23273a;
+$text                       : #e2e4ea;
+$text-muted                 : #b6bccb;
+$link                       : #8fb2d9;
+$link-dark                  : #b4c7e6;
+$link-light                 : #7aa0c8;
+$footer                     : #0f111a;
+$border                     : #2a2f3e;
+$border-dark                : #353b4d;
+$selection-bg               : #2a3a55;
+$selection-text             : #f0f3ff;
+
+/* Color codes used for the site */
+$danger-color               : #c96b6b;
+$info-color                 : #8fb2d9;
+$notice-color               : #9aa6bd;
+$success-color              : #88a38b;
+$warning-color              : #c7a36c;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.2);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-light};
+  --global-link-color-visited         : #{$link-dark};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$text-muted};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-light};
+  --global-selection-bg-color         : #{$selection-bg};
+  --global-selection-text-color       : #{$selection-text};
+}
+
+/* Subtle snow-drift texture and cold glow */
+body {
+  background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.05) 1px, transparent 2px),
+    radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.04) 1px, transparent 2px),
+    radial-gradient(circle at 42% 72%, rgba(255, 255, 255, 0.035) 0, rgba(255, 255, 255, 0.035) 1px, transparent 2px),
+    linear-gradient(180deg, rgba(18, 20, 32, 0.92), rgba(8, 9, 14, 0.96));
+  background-size: 260px 260px, 340px 340px, 420px 420px, 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Gothic typography tone */
+h1, h2, h3, h4, h5, h6,
+.page__title, .page__lead, .archive__item-title {
+  font-family: "Garamond", "Times New Roman", "Palatino Linotype", "Georgia", serif;
+  letter-spacing: 0.02em;
+}
+
+/* Keep imagery subdued to match the mood */
+.page__content img,
+.archive__item-teaser img {
+  filter: grayscale(30%) contrast(95%);
+}
+
+/* Text selection styling */
+::selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}
+
+::-moz-selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}
