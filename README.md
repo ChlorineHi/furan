@@ -8,6 +8,7 @@
 - Added a `gothic` theme for a cold, melancholic, and lonely atmosphere (subtle snow texture, muted palette, serif headings).
 - To use it, keep `site_theme: "gothic"` in `_config.yml` (or switch to other themes as needed).
 - Theme files live in `_sass/theme/_gothic_light.scss` and `_sass/theme/_gothic_dark.scss`.
+- Updated the CV page (`_pages/cv.md`) based on `CV_Wang_Jingxuan.pdf` and added the PDF to `files/` for download.
 
 ## Future Improvements (Optional)
 
